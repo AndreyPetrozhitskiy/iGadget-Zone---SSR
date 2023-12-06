@@ -1,0 +1,75 @@
+.product__block{
+    width: 100%;
+    height: 460px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Jost', sans-serif;
+}
+.product__block-container{
+    width: 1600px;
+    height: 460px;
+}
+.product__block-container__h1{
+    font-size: 26px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: black;
+    margin-left: 117px;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    &::after{
+        content: url(../image/arrowssssssssssssssssssssssss.svg);
+        margin-left: 10px;
+        
+    }
+}
+
+.product__block-container__nav-block{
+    width: 100%;
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 117px;
+    
+}
+.product__block-container__nav-block--item{
+    width: auto;
+    height: 26px;
+    color: #999999;
+    border-radius: 10px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    user-select: none;
+    
+    cursor: pointer;
+    p{
+        margin-right: 10px;
+        margin-left: 10px;
+        cursor: pointer;
+        &:hover{
+            color: rgb(0, 0, 0);
+        }
+    }
+}
+.product__block-container__nav-block--item.selected {
+ background-color: #468966;
+
+ p{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+  }
+  .product__block-container__slider{
+    width: 1600px;
+    height: 370px;
+    
+}

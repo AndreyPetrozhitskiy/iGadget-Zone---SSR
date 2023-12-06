@@ -1,0 +1,278 @@
+.slider__product{
+    height: 370px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    user-select: none; 
+}
+.slider__product--swiper{
+    width: 1380px !important;
+    height: 370px !important;
+    padding-left: 20px !important;
+    padding-top: 15px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+}
+.slider__product--swiper__item{
+    width: 195px !important;
+     max-height: 300px;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px;
+    img{
+        width: 90%;
+        height: 170px;
+        transition: 0.3s;
+        object-fit: contain;
+        margin-top: 10px;
+    }
+    p{
+        font-size: 19px;
+        width: 100%;
+        height: 50px;
+        color: rgb(0, 0, 0);
+        transition: 0.3s;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    p:nth-of-type(2){
+       
+        font-weight: bold;
+        font-size: 25px;
+    }
+    &:hover{
+        
+        max-height: 340px;
+        height: auto;
+        border: 1px solid rgba(70, 137, 102, 1);
+        img{
+        }
+        p:nth-of-type(1){
+            color: rgba(70, 137, 102, 1);
+        }
+        .slider__product--swiper__item--buttons{
+            display: flex;
+        }
+    }
+    }
+    .slider__product--swiper__item--buttons{
+        width: 100%;
+        display: none;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 10px;
+        overflow: hidden;
+        button{
+            width: 95px;
+            height: 35px;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+            border: none;
+            background-color: rgba(70, 137, 102, 1);
+            color: white;
+            transition: 0.3s;
+            &:hover{
+                background-color: rgb(255, 255, 255);  
+                border: 1px solid rgba(70, 137, 102, 1);
+                color: rgba(70, 137, 102, 1);
+                transition: 0.3s;
+            }
+        }
+        &-btnka{
+            border: 1px solid rgba(19, 38, 12, 0.1);
+            width: 35px;
+            height: 35px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            &:hover{
+                img{
+                    filter: brightness(0) saturate(100%) invert(48%) sepia(11%) saturate(1628%)
+          hue-rotate(96deg) brightness(95%) contrast(82%);
+                }
+            }
+            img{
+                width: 20px;
+                height: 20px;
+                display: block;
+                filter: brightness(45%);
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+
+
+
+.slider__product--swiper__item-two{
+    width: 100%;
+    min-height: 50px;
+  height: auto;
+   
+    
+    display: none;
+   
+    display: none;
+    
+    &-content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        transition: 0.3s;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 10px;
+        
+        
+        
+    }
+}
+
+
+
+.swiper-button-next-0,
+.swiper-button-next-1,
+.swiper-button-next-2,
+.swiper-button-next-3,
+.swiper-button-next-4,
+.swiper-button-next-5,
+.swiper-button-next-6,
+.swiper-button-next-7,
+.swiper-button-next-8,
+.swiper-button-next-9
+ {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 10px !important;
+    background-color: white !important;
+     color: #000000; /* Цвет текста */
+     border: 1px solid rgba(0, 0, 0, 0.61) !important;
+     position: absolute !important;
+     cursor: pointer !important; /* Изменяем указатель на курсоре */
+     display: flex !important;
+     flex-direction: row !important;
+     justify-content: center !important;
+     align-items: center !important;
+     
+     right: 80px !important;
+    //  top: 265px !important;
+   }
+   
+   /* Стиль кнопки "предыдущий слайд" */
+   .swiper-button-prev-0,
+   .swiper-button-prev-1,
+   .swiper-button-prev-2,
+   .swiper-button-prev-3,
+   .swiper-button-prev-4, 
+    .swiper-button-prev-5,
+    .swiper-button-prev-6,
+    .swiper-button-prev-7,
+    .swiper-button-prev-8,
+    .swiper-button-prev-9
+    {
+     width: 30px !important;
+     height: 30px !important;
+     border-radius: 10px !important;
+     background-color: white !important;
+     cursor: pointer !important; /* Изменяем указатель на курсоре */
+     position: absolute !important;
+     left: 80px !important;
+    //  top: 265px !important;
+     border: 1px solid rgba(0, 0, 0, 0.61) !important;
+     display: flex !important;
+     flex-direction: row !important;
+     justify-content: center !important;
+     align-items: center !important;
+   }
+   .swiper-button-next-0:hover,
+.swiper-button-next-1:hover,
+.swiper-button-next-2:hover,
+.swiper-button-next-3:hover,
+.swiper-button-next-4:hover,
+.swiper-button-next-5:hover,
+.swiper-button-next-6:hover,
+.swiper-button-next-7:hover,
+.swiper-button-next-8:hover,
+.swiper-button-next-9:hover {
+    background-color: rgba(70, 137, 102, 1) !important; /* Изменяем цвет фона при наведении */
+  }
+   /* При наведении курсора на кнопку */
+   .swiper-button-prev-0:hover,
+   .swiper-button-prev-1:hover,
+   .swiper-button-prev-2:hover,
+   .swiper-button-prev-3:hover,
+   .swiper-button-prev-4:hover, 
+    .swiper-button-prev-5:hover,
+    .swiper-button-prev-6:hover,
+    .swiper-button-prev-7:hover,
+    .swiper-button-prev-8:hover,
+    .swiper-button-prev-9:hover {
+        background-color: rgba(70, 137, 102, 1) !important; /* Изменяем цвет фона при наведении */
+      }
+//    .swiper-button-next:hover, .swiper-button-prev:hover {
+//      background-color: #0056b3 !important; /* Изменяем цвет фона при наведении */
+//    }
+
+    .swiper-button-next-0::after,
+    .swiper-button-next-1::after,
+    .swiper-button-next-2::after,
+    .swiper-button-next-3::after,
+    .swiper-button-next-4::after,
+    .swiper-button-next-5::after,
+    .swiper-button-next-6::after,
+    .swiper-button-next-7::after,
+    .swiper-button-next-8::after,
+    .swiper-button-next-9::after{
+        content: url(../image/Arrow1.png) !important;
+        color: #000000 !important;
+        font-size: 5px !important;
+     
+      }
+    .swiper-button-prev-0::after,
+    .swiper-button-prev-1::after,
+    .swiper-button-prev-2::after,
+    .swiper-button-prev-3::after,
+    .swiper-button-prev-4::after, 
+    .swiper-button-prev-5::after,
+    .swiper-button-prev-6::after,
+    .swiper-button-prev-7::after,
+    .swiper-button-prev-8::after,
+    .swiper-button-prev-9::after {
+        content: url(../image/Arrow2.png) !important;
+        color: #000000 !important;
+        font-size: 5px !important;
+     
+      }
+
+
+//    .swiper-button-next::after {
+//      content: url(../image/Arrow1.png) !important;
+//      color: #000000 !important;
+//      font-size: 5px !important;
+  
+//    }
+//    .swiper-button-prev::after{
+//      content: url(../image/Arrow2.png) !important;
+//      color: #000000 !important;
+//      font-size: 5px !important;
+  
+//    }
+   .swiper-button-disabled{
+     display: none !important;
+   }
